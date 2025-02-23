@@ -1,0 +1,782 @@
+
+
+===================================================================
+Cycle 0
+=================================================================
+PC: 0
+Commit Branch Signals: 
+branch pcs: 0| actual takens: 0| commit_branch: 0
+branch pcs: 0| actual takens: 0| commit_branch: 0
+branch pcs: 0| actual takens: 0| commit_branch: 0
+branch pcs: 0| actual takens: 0| commit_branch: 0
+
+_______________
+Flush Signal: 0
+Stall Signal: 0
+Valids_f |  instruction_f | and tags_f: 
+    1 |         8000003               1
+    0 |        20210001               2
+    0 |        20420002               3
+    0 |        20630003               4
+___________________
+Dispatch Info(from fetch to commit):
+Valid: 0 | Type: 0 | Destination:0
+Valid: 0 | Type: 0 | Destination:1
+Valid: 0 | Type: 0 | Destination:2
+Valid: 0 | Type: 0 | Destination:3
+In order writes, destination: 
+Dest: 0 | Wr En: 0 Tags:0
+Dest: 0 | Wr En: 0 Tags:0
+Dest: 0 | Wr En: 0 Tags:0
+Dest: 0 | Wr En: 0 Tags:0
+
+ISSUE DATA---------------
+ALU0: Issue Valid: 0 | Tag: 0 | Instruction_d:          0
+ALUSrc1: 0 | ALU_src2: 0
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 0 | Tag: 0
+---------------
+ALU1: Issue Valid: 0 | Tag: 0 | Instruction_d:          0
+ALUSrc1: 0 | ALU_src2: 0
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 0 | Tag: 0
+---------------
+LSU: Issue Valid: 0 | Tag: 0 | Instruction_d:          0
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 0 | Tag: 0
+---------------
+Branch: Issue Valid: 0 | Tag: 0 | Type: 0 | Instruction_d:          0
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 0 | Tag: 0
+
+Ready slot: 0
+++++++++++++++
+Valid: 0
+Operands: 0 0
+rob tag out: 0
+PC plus one: 1
+Type: 0
+branch taken: 0
+predicted taken: 0
+++++++++++++++
+- - - - -
+Broadcast 0: Valid: 0| Tag: 0| Result: 0
+Broadcast 1: Valid: 0| Tag: 0| Result: 0
+Broadcast 2: Valid: 0| Tag: 0| Result: 5
+Branch Broadcast - Valid: 0| Tag: 0| Result: 1
+Commit ----------------
+ROB Busy: 0
+Commit Count: 0
+Fetch Count: 0
+Commit Info:
+1- Commit Valid: 0 | Commit Tag: 1 | Commit Value: 0 | Commit Destination: 0
+2- Commit Valid: 0 | Commit Tag: 2 | Commit Value: 0 | Commit Destination: 0
+3- Commit Valid: 0 | Commit Tag: 3 | Commit Value: 0 | Commit Destination: 0
+4- Commit Valid: 0 | Commit Tag: 4 | Commit Value: 0 | Commit Destination: 0
+
+
+===================================================================
+Cycle 1
+=================================================================
+PC: 3
+Commit Branch Signals: 
+branch pcs: 0| actual takens: 0| commit_branch: 0
+branch pcs: 0| actual takens: 0| commit_branch: 0
+branch pcs: 0| actual takens: 0| commit_branch: 0
+branch pcs: 0| actual takens: 0| commit_branch: 0
+
+_______________
+Flush Signal: 0
+Stall Signal: 0
+Valids_f |  instruction_f | and tags_f: 
+    1 |        20630003               1
+    1 |               0               2
+    0 |               0               3
+    0 |               0               4
+___________________
+Dispatch Info(from fetch to commit):
+Valid: 1 | Type: 0 | Destination:3
+Valid: 1 | Type: 0 | Destination:0
+Valid: 0 | Type: 0 | Destination:0
+Valid: 0 | Type: 0 | Destination:0
+In order writes, destination: 
+Dest: 0 | Wr En: 0 Tags:1
+Dest: 1 | Wr En: 0 Tags:2
+Dest: 2 | Wr En: 0 Tags:3
+Dest: 3 | Wr En: 0 Tags:4
+
+ISSUE DATA---------------
+ALU0: Issue Valid: 0 | Tag: 2 | Instruction_d:   20210001
+ALUSrc1: 0 | ALU_src2: 1
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 1 | Tag: 0
+---------------
+ALU1: Issue Valid: 0 | Tag: 3 | Instruction_d:   20420002
+ALUSrc1: 0 | ALU_src2: 1
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 2 | Tag: 0
+---------------
+LSU: Issue Valid: 0 | Tag: 0 | Instruction_d:          0
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 0 | Tag: 0
+---------------
+Branch: Issue Valid: 0 | Tag: 0 | Type: 0 | Instruction_d:          0
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 0 | Tag: 0
+
+Ready slot: 0
+++++++++++++++
+Valid: 0
+Operands: 0 0
+rob tag out: 0
+PC plus one: 1
+Type: 0
+branch taken: 0
+predicted taken: 0
+++++++++++++++
+- - - - -
+Broadcast 0: Valid: 0| Tag: 0| Result: 0
+Broadcast 1: Valid: 0| Tag: 0| Result: 0
+Broadcast 2: Valid: 0| Tag: 0| Result: 5
+Branch Broadcast - Valid: 0| Tag: 0| Result: 1
+Commit ----------------
+ROB Busy: 0
+Commit Count: 0
+Fetch Count: 2
+Commit Info:
+1- Commit Valid: 0 | Commit Tag: 1 | Commit Value: 0 | Commit Destination: 0
+2- Commit Valid: 0 | Commit Tag: 2 | Commit Value: 0 | Commit Destination: 0
+3- Commit Valid: 0 | Commit Tag: 3 | Commit Value: 0 | Commit Destination: 0
+4- Commit Valid: 0 | Commit Tag: 4 | Commit Value: 0 | Commit Destination: 0
+
+
+===================================================================
+Cycle 2
+=================================================================
+PC: 5
+Commit Branch Signals: 
+branch pcs: 3| actual takens: 0| commit_branch: 0
+branch pcs: 0| actual takens: 0| commit_branch: 0
+branch pcs: 0| actual takens: 0| commit_branch: 0
+branch pcs: 0| actual takens: 0| commit_branch: 0
+
+_______________
+Flush Signal: 0
+Stall Signal: 0
+Valids_f |  instruction_f | and tags_f: 
+    1 |               0               3
+    1 |               0               4
+    0 |               0               5
+    0 |               0               6
+___________________
+Dispatch Info(from fetch to commit):
+Valid: 1 | Type: 0 | Destination:0
+Valid: 1 | Type: 0 | Destination:0
+Valid: 0 | Type: 0 | Destination:0
+Valid: 0 | Type: 0 | Destination:0
+In order writes, destination: 
+Dest: 3 | Wr En: 1 Tags:1
+Dest: 0 | Wr En: 1 Tags:2
+Dest: 0 | Wr En: 0 Tags:3
+Dest: 0 | Wr En: 0 Tags:4
+
+ISSUE DATA---------------
+ALU0: Issue Valid: 1 | Tag: 2 | Instruction_d:          0
+ALUSrc1: 1 | ALU_src2: 0
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 0 | Tag: 0
+---------------
+ALU1: Issue Valid: 1 | Tag: 1 | Instruction_d:   20630003
+ALUSrc1: 0 | ALU_src2: 1
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 3 | Tag: 0
+---------------
+LSU: Issue Valid: 0 | Tag: 0 | Instruction_d:          0
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 0 | Tag: 0
+---------------
+Branch: Issue Valid: 0 | Tag: 0 | Type: 0 | Instruction_d:          0
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 0 | Tag: 0
+
+Ready slot: 0
+++++++++++++++
+Valid: 0
+Operands: 0 0
+rob tag out: 0
+PC plus one: 1
+Type: 0
+branch taken: 0
+predicted taken: 0
+++++++++++++++
+- - - - -
+Broadcast 0: Valid: 1| Tag: 2| Result: 0
+Broadcast 1: Valid: 1| Tag: 1| Result: 3
+Broadcast 2: Valid: 0| Tag: 0| Result: 5
+Branch Broadcast - Valid: 0| Tag: 0| Result: 1
+Commit ----------------
+ROB Busy: 2
+Commit Count: 0
+Fetch Count: 2
+Commit Info:
+1- Commit Valid: 0 | Commit Tag: 1 | Commit Value: 0 | Commit Destination: 3
+2- Commit Valid: 0 | Commit Tag: 2 | Commit Value: 0 | Commit Destination: 0
+3- Commit Valid: 0 | Commit Tag: 3 | Commit Value: 0 | Commit Destination: 0
+4- Commit Valid: 0 | Commit Tag: 4 | Commit Value: 0 | Commit Destination: 0
+
+
+===================================================================
+Cycle 3
+=================================================================
+PC: 7
+Commit Branch Signals: 
+branch pcs: 3| actual takens: 0| commit_branch: 0
+branch pcs: 0| actual takens: 0| commit_branch: 0
+branch pcs: 0| actual takens: 0| commit_branch: 0
+branch pcs: 0| actual takens: 0| commit_branch: 0
+
+_______________
+Flush Signal: 0
+Stall Signal: 0
+Valids_f |  instruction_f | and tags_f: 
+    1 |               0               5
+    1 |               0               6
+    1 |        10630007               7
+    0 |        20840004               8
+___________________
+Dispatch Info(from fetch to commit):
+Valid: 1 | Type: 0 | Destination:0
+Valid: 1 | Type: 0 | Destination:0
+Valid: 1 | Type: 2 | Destination:9
+Valid: 0 | Type: 0 | Destination:4
+In order writes, destination: 
+Dest: 0 | Wr En: 1 Tags:3
+Dest: 0 | Wr En: 1 Tags:4
+Dest: 0 | Wr En: 0 Tags:5
+Dest: 0 | Wr En: 0 Tags:6
+
+ISSUE DATA---------------
+ALU0: Issue Valid: 1 | Tag: 3 | Instruction_d:          0
+ALUSrc1: 1 | ALU_src2: 0
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 0 | Tag: 0
+---------------
+ALU1: Issue Valid: 1 | Tag: 4 | Instruction_d:          0
+ALUSrc1: 1 | ALU_src2: 0
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 0 | Value: 0 | Tag: 3
+---------------
+LSU: Issue Valid: 0 | Tag: 0 | Instruction_d:          0
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 0 | Tag: 0
+---------------
+Branch: Issue Valid: 0 | Tag: 0 | Type: 0 | Instruction_d:          0
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 0 | Tag: 0
+
+Ready slot: 0
+++++++++++++++
+Valid: 0
+Operands: 0 0
+rob tag out: 0
+PC plus one: 1
+Type: 0
+branch taken: 0
+predicted taken: 0
+++++++++++++++
+- - - - -
+Broadcast 0: Valid: 1| Tag: 3| Result: 0
+Broadcast 1: Valid: 0| Tag: 0| Result: 0
+Broadcast 2: Valid: 0| Tag: 0| Result: 5
+Branch Broadcast - Valid: 0| Tag: 0| Result: 1
+Commit ----------------
+ROB Busy: 4
+Commit Count: 2
+Fetch Count: 3
+Commit Info:
+1- Commit Valid: 1 | Commit Tag: 1 | Commit Value: 3 | Commit Destination: 3
+2- Commit Valid: 1 | Commit Tag: 2 | Commit Value: 0 | Commit Destination: 0
+3- Commit Valid: 0 | Commit Tag: 3 | Commit Value: 0 | Commit Destination: 0
+4- Commit Valid: 0 | Commit Tag: 4 | Commit Value: 0 | Commit Destination: 0
+
+
+===================================================================
+Cycle 4
+=================================================================
+PC: 10
+Commit Branch Signals: 
+branch pcs: 0| actual takens: 0| commit_branch: 0
+branch pcs: 0| actual takens: 0| commit_branch: 0
+branch pcs: 0| actual takens: 0| commit_branch: 0
+branch pcs: 0| actual takens: 0| commit_branch: 0
+
+_______________
+Flush Signal: 0
+Stall Signal: 0
+Valids_f |  instruction_f | and tags_f: 
+    1 |        20840004               8
+    1 |               0               9
+    0 |               0               10
+    0 |        10840003               11
+___________________
+Dispatch Info(from fetch to commit):
+Valid: 1 | Type: 0 | Destination:4
+Valid: 1 | Type: 0 | Destination:0
+Valid: 0 | Type: 0 | Destination:0
+Valid: 0 | Type: 2 | Destination:13
+In order writes, destination: 
+Dest: 0 | Wr En: 1 Tags:5
+Dest: 0 | Wr En: 1 Tags:6
+Dest: 3 | Wr En: 0 Tags:7
+Dest: 4 | Wr En: 0 Tags:8
+
+ISSUE DATA---------------
+ALU0: Issue Valid: 1 | Tag: 6 | Instruction_d:          0
+ALUSrc1: 1 | ALU_src2: 0
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 0 | Value: 0 | Tag: 5
+---------------
+ALU1: Issue Valid: 1 | Tag: 5 | Instruction_d:          0
+ALUSrc1: 1 | ALU_src2: 0
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 0 | Tag: 0
+---------------
+LSU: Issue Valid: 0 | Tag: 0 | Instruction_d:          0
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 0 | Tag: 0
+---------------
+Branch: Issue Valid: 1 | Tag: 7 | Type: 2 | Instruction_d:   10630007
+Operand1: Valid: 1 | Value: 3 | Tag: 0
+Operand2: Valid: 1 | Value: 3 | Tag: 0
+
+Ready slot: 0
+++++++++++++++
+Valid: 0
+Operands: 0 0
+rob tag out: 0
+PC plus one: 1
+Type: 0
+branch taken: 0
+predicted taken: 0
+++++++++++++++
+- - - - -
+Broadcast 0: Valid: 0| Tag: 0| Result: 0
+Broadcast 1: Valid: 1| Tag: 5| Result: 0
+Broadcast 2: Valid: 0| Tag: 0| Result: 5
+Branch Broadcast - Valid: 0| Tag: 0| Result: 1
+Commit ----------------
+ROB Busy: 5
+Commit Count: 2
+Fetch Count: 2
+Commit Info:
+1- Commit Valid: 1 | Commit Tag: 3 | Commit Value: 0 | Commit Destination: 0
+2- Commit Valid: 1 | Commit Tag: 4 | Commit Value: 0 | Commit Destination: 0
+3- Commit Valid: 0 | Commit Tag: 5 | Commit Value: 0 | Commit Destination: 0
+4- Commit Valid: 0 | Commit Tag: 6 | Commit Value: 0 | Commit Destination: 0
+
+
+===================================================================
+Cycle 5
+=================================================================
+PC: 12
+Commit Branch Signals: 
+branch pcs: 0| actual takens: 0| commit_branch: 0
+branch pcs: 0| actual takens: 0| commit_branch: 0
+branch pcs: 9| actual takens: 0| commit_branch: 0
+branch pcs: 4| actual takens: 0| commit_branch: 0
+
+_______________
+Flush Signal: 0
+Stall Signal: 0
+Valids_f |  instruction_f | and tags_f: 
+    1 |               0               10
+    1 |        10840003               11
+    1 |        20a50005               12
+    0 |        10a50001               13
+___________________
+Dispatch Info(from fetch to commit):
+Valid: 1 | Type: 0 | Destination:0
+Valid: 1 | Type: 2 | Destination:13
+Valid: 1 | Type: 0 | Destination:5
+Valid: 0 | Type: 2 | Destination:15
+In order writes, destination: 
+Dest: 4 | Wr En: 1 Tags:8
+Dest: 0 | Wr En: 1 Tags:9
+Dest: 0 | Wr En: 0 Tags:10
+Dest: 4 | Wr En: 0 Tags:11
+
+ISSUE DATA---------------
+ALU0: Issue Valid: 1 | Tag: 8 | Instruction_d:   20840004
+ALUSrc1: 0 | ALU_src2: 1
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 4 | Tag: 0
+---------------
+ALU1: Issue Valid: 1 | Tag: 9 | Instruction_d:          0
+ALUSrc1: 1 | ALU_src2: 0
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 0 | Tag: 0
+---------------
+LSU: Issue Valid: 0 | Tag: 0 | Instruction_d:          0
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 0 | Tag: 0
+---------------
+Branch: Issue Valid: 0 | Tag: 11 | Type: 2 | Instruction_d:   10840003
+Operand1: Valid: 0 | Value: 0 | Tag: 8
+Operand2: Valid: 0 | Value: 0 | Tag: 8
+
+Ready slot: 3
+++++++++++++++
+Valid: 1
+Operands: 3 3
+rob tag out: 7
+PC plus one: 10
+Type: 2
+branch taken: 1
+predicted taken: 0
+++++++++++++++
+- - - - -
+Broadcast 0: Valid: 1| Tag: 8| Result: 4
+Broadcast 1: Valid: 1| Tag: 9| Result: 0
+Broadcast 2: Valid: 0| Tag: 0| Result: 5
+Branch Broadcast - Valid: 1| Tag: 7| Result: 80000011
+Commit ----------------
+ROB Busy: 5
+Commit Count: 2
+Fetch Count: 3
+Commit Info:
+1- Commit Valid: 1 | Commit Tag: 5 | Commit Value: 0 | Commit Destination: 0
+2- Commit Valid: 1 | Commit Tag: 6 | Commit Value: 0 | Commit Destination: 0
+3- Commit Valid: 0 | Commit Tag: 7 | Commit Value: 0 | Commit Destination: 9
+4- Commit Valid: 0 | Commit Tag: 8 | Commit Value: 0 | Commit Destination: 4
+
+
+===================================================================
+Cycle 6
+=================================================================
+PC: 15
+Commit Branch Signals: 
+branch pcs: 9| actual takens: 1| commit_branch: 0
+branch pcs: 4| actual takens: 0| commit_branch: 0
+branch pcs: 0| actual takens: 0| commit_branch: 0
+branch pcs: 0| actual takens: 0| commit_branch: 0
+
+_______________
+Flush Signal: 1
+Stall Signal: 0
+Valids_f |  instruction_f | and tags_f: 
+    1 |        10a50001               13
+    1 |        20c60006               14
+    1 |        20e70007               15
+    0 |               0               16
+___________________
+Dispatch Info(from fetch to commit):
+Valid: 1 | Type: 2 | Destination:15
+Valid: 1 | Type: 0 | Destination:6
+Valid: 1 | Type: 0 | Destination:7
+Valid: 0 | Type: 0 | Destination:0
+In order writes, destination: 
+Dest: 0 | Wr En: 1 Tags:10
+Dest: 4 | Wr En: 0 Tags:11
+Dest: 5 | Wr En: 1 Tags:12
+Dest: 5 | Wr En: 0 Tags:13
+
+ISSUE DATA---------------
+ALU0: Issue Valid: 1 | Tag: 12 | Instruction_d:   20a50005
+ALUSrc1: 0 | ALU_src2: 1
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 5 | Tag: 0
+---------------
+ALU1: Issue Valid: 1 | Tag: 10 | Instruction_d:          0
+ALUSrc1: 1 | ALU_src2: 0
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 0 | Tag: 0
+---------------
+LSU: Issue Valid: 0 | Tag: 0 | Instruction_d:          0
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 0 | Tag: 0
+---------------
+Branch: Issue Valid: 1 | Tag: 11 | Type: 2 | Instruction_d:   10840003
+Operand1: Valid: 1 | Value: 4 | Tag: 8
+Operand2: Valid: 1 | Value: 4 | Tag: 8
+
+Ready slot: 0
+++++++++++++++
+Valid: 0
+Operands: 0 0
+rob tag out: 0
+PC plus one: 1
+Type: 0
+branch taken: 0
+predicted taken: 0
+++++++++++++++
+- - - - -
+Broadcast 0: Valid: 0| Tag: 0| Result: 0
+Broadcast 1: Valid: 0| Tag: 0| Result: 0
+Broadcast 2: Valid: 0| Tag: 0| Result: 5
+Branch Broadcast - Valid: 0| Tag: 0| Result: 1
+Commit ----------------
+ROB Busy: 6
+Commit Count: 3
+Fetch Count: 3
+Commit Info:
+1- Commit Valid: 1 | Commit Tag: 7 | Commit Value: 80000011 | Commit Destination: 9
+2- Commit Valid: 1 | Commit Tag: 8 | Commit Value: 4 | Commit Destination: 4
+3- Commit Valid: 1 | Commit Tag: 9 | Commit Value: 0 | Commit Destination: 0
+4- Commit Valid: 0 | Commit Tag: a | Commit Value: 0 | Commit Destination: 0
+
+
+===================================================================
+Cycle 7
+=================================================================
+PC: 0
+Commit Branch Signals: 
+branch pcs: 0| actual takens: 0| commit_branch: 0
+branch pcs: 0| actual takens: 0| commit_branch: 0
+branch pcs: 0| actual takens: 0| commit_branch: 0
+branch pcs: 0| actual takens: 0| commit_branch: 0
+
+_______________
+Flush Signal: 0
+Stall Signal: 0
+Valids_f |  instruction_f | and tags_f: 
+    1 |         8000003               1
+    0 |        20210001               2
+    0 |        20420002               3
+    0 |        20630003               4
+___________________
+Dispatch Info(from fetch to commit):
+Valid: 0 | Type: 0 | Destination:0
+Valid: 0 | Type: 0 | Destination:1
+Valid: 0 | Type: 0 | Destination:2
+Valid: 0 | Type: 0 | Destination:3
+In order writes, destination: 
+Dest: 0 | Wr En: 0 Tags:0
+Dest: 0 | Wr En: 0 Tags:0
+Dest: 0 | Wr En: 0 Tags:0
+Dest: 0 | Wr En: 0 Tags:0
+
+ISSUE DATA---------------
+ALU0: Issue Valid: 0 | Tag: 0 | Instruction_d:          0
+ALUSrc1: 0 | ALU_src2: 0
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 0 | Tag: 0
+---------------
+ALU1: Issue Valid: 0 | Tag: 0 | Instruction_d:          0
+ALUSrc1: 0 | ALU_src2: 0
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 0 | Tag: 0
+---------------
+LSU: Issue Valid: 0 | Tag: 0 | Instruction_d:          0
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 0 | Tag: 0
+---------------
+Branch: Issue Valid: 0 | Tag: 0 | Type: 0 | Instruction_d:          0
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 0 | Tag: 0
+
+Ready slot: 0
+++++++++++++++
+Valid: 0
+Operands: 0 0
+rob tag out: 0
+PC plus one: 1
+Type: 0
+branch taken: 0
+predicted taken: 0
+++++++++++++++
+- - - - -
+Broadcast 0: Valid: 0| Tag: 0| Result: 0
+Broadcast 1: Valid: 0| Tag: 0| Result: 0
+Broadcast 2: Valid: 0| Tag: 0| Result: 5
+Branch Broadcast - Valid: 0| Tag: 0| Result: 1
+Commit ----------------
+ROB Busy: 0
+Commit Count: 3
+Fetch Count: 0
+Commit Info:
+1- Commit Valid: 1 | Commit Tag: 1 | Commit Value: 0 | Commit Destination: 0
+2- Commit Valid: 1 | Commit Tag: 2 | Commit Value: 0 | Commit Destination: 0
+3- Commit Valid: 1 | Commit Tag: 3 | Commit Value: 0 | Commit Destination: 0
+4- Commit Valid: 0 | Commit Tag: 4 | Commit Value: 0 | Commit Destination: 0
+
+
+===================================================================
+Cycle 8
+=================================================================
+PC: 3
+Commit Branch Signals: 
+branch pcs: 0| actual takens: 0| commit_branch: 0
+branch pcs: 0| actual takens: 0| commit_branch: 0
+branch pcs: 0| actual takens: 0| commit_branch: 0
+branch pcs: 0| actual takens: 0| commit_branch: 0
+
+_______________
+Flush Signal: 0
+Stall Signal: 0
+Valids_f |  instruction_f | and tags_f: 
+    1 |        20630003               1
+    1 |               0               2
+    0 |               0               3
+    0 |               0               4
+___________________
+Dispatch Info(from fetch to commit):
+Valid: 1 | Type: 0 | Destination:3
+Valid: 1 | Type: 0 | Destination:0
+Valid: 0 | Type: 0 | Destination:0
+Valid: 0 | Type: 0 | Destination:0
+In order writes, destination: 
+Dest: 0 | Wr En: 0 Tags:1
+Dest: 1 | Wr En: 0 Tags:2
+Dest: 2 | Wr En: 0 Tags:3
+Dest: 3 | Wr En: 0 Tags:4
+
+ISSUE DATA---------------
+ALU0: Issue Valid: 0 | Tag: 2 | Instruction_d:   20210001
+ALUSrc1: 0 | ALU_src2: 1
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 1 | Tag: 0
+---------------
+ALU1: Issue Valid: 0 | Tag: 3 | Instruction_d:   20420002
+ALUSrc1: 0 | ALU_src2: 1
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 2 | Tag: 0
+---------------
+LSU: Issue Valid: 0 | Tag: 0 | Instruction_d:          0
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 0 | Tag: 0
+---------------
+Branch: Issue Valid: 0 | Tag: 0 | Type: 0 | Instruction_d:          0
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 0 | Tag: 0
+
+Ready slot: 0
+++++++++++++++
+Valid: 0
+Operands: 0 0
+rob tag out: 0
+PC plus one: 1
+Type: 0
+branch taken: 0
+predicted taken: 0
+++++++++++++++
+- - - - -
+Broadcast 0: Valid: 0| Tag: 0| Result: 0
+Broadcast 1: Valid: 0| Tag: 0| Result: 0
+Broadcast 2: Valid: 0| Tag: 0| Result: 5
+Branch Broadcast - Valid: 0| Tag: 0| Result: 1
+Commit ----------------
+ROB Busy: fffffffd
+Commit Count: 3
+Fetch Count: 2
+Commit Info:
+1- Commit Valid: 1 | Commit Tag: 4 | Commit Value: 0 | Commit Destination: 0
+2- Commit Valid: 1 | Commit Tag: 5 | Commit Value: 0 | Commit Destination: 0
+3- Commit Valid: 1 | Commit Tag: 6 | Commit Value: 0 | Commit Destination: 0
+4- Commit Valid: 0 | Commit Tag: 7 | Commit Value: 0 | Commit Destination: 0
+
+
+===================================================================
+Cycle 9
+=================================================================
+PC: 5
+Commit Branch Signals: 
+branch pcs: 0| actual takens: 0| commit_branch: 0
+branch pcs: 0| actual takens: 0| commit_branch: 0
+branch pcs: 0| actual takens: 0| commit_branch: 0
+branch pcs: 0| actual takens: 0| commit_branch: 0
+
+_______________
+Flush Signal: 0
+Stall Signal: 0
+Valids_f |  instruction_f | and tags_f: 
+    1 |               0               3
+    1 |               0               4
+    0 |               0               5
+    0 |               0               6
+___________________
+Dispatch Info(from fetch to commit):
+Valid: 1 | Type: 0 | Destination:0
+Valid: 1 | Type: 0 | Destination:0
+Valid: 0 | Type: 0 | Destination:0
+Valid: 0 | Type: 0 | Destination:0
+In order writes, destination: 
+Dest: 3 | Wr En: 1 Tags:1
+Dest: 0 | Wr En: 1 Tags:2
+Dest: 0 | Wr En: 0 Tags:3
+Dest: 0 | Wr En: 0 Tags:4
+
+ISSUE DATA---------------
+ALU0: Issue Valid: 1 | Tag: 2 | Instruction_d:          0
+ALUSrc1: 1 | ALU_src2: 0
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 0 | Tag: 0
+---------------
+ALU1: Issue Valid: 1 | Tag: 1 | Instruction_d:   20630003
+ALUSrc1: 0 | ALU_src2: 1
+Operand1: Valid: 1 | Value: 3 | Tag: 0
+Operand2: Valid: 1 | Value: 3 | Tag: 0
+---------------
+LSU: Issue Valid: 0 | Tag: 0 | Instruction_d:          0
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 0 | Tag: 0
+---------------
+Branch: Issue Valid: 0 | Tag: 0 | Type: 0 | Instruction_d:          0
+Operand1: Valid: 1 | Value: 0 | Tag: 0
+Operand2: Valid: 1 | Value: 0 | Tag: 0
+
+Ready slot: 0
+++++++++++++++
+Valid: 0
+Operands: 0 0
+rob tag out: 0
+PC plus one: 1
+Type: 0
+branch taken: 0
+predicted taken: 0
+++++++++++++++
+- - - - -
+Broadcast 0: Valid: 1| Tag: 2| Result: 0
+Broadcast 1: Valid: 1| Tag: 1| Result: 6
+Broadcast 2: Valid: 0| Tag: 0| Result: 5
+Branch Broadcast - Valid: 0| Tag: 0| Result: 1
+Commit ----------------
+ROB Busy: fffffffc
+Commit Count: 3
+Fetch Count: 2
+Commit Info:
+1- Commit Valid: 1 | Commit Tag: 7 | Commit Value: 0 | Commit Destination: 0
+2- Commit Valid: 1 | Commit Tag: 8 | Commit Value: 0 | Commit Destination: 0
+3- Commit Valid: 1 | Commit Tag: 9 | Commit Value: 0 | Commit Destination: 0
+4- Commit Valid: 0 | Commit Tag: a | Commit Value: 0 | Commit Destination: 0
+Simulation complete.
+ 0: 1    1          0
+ 1: 1    1          0
+ 2: 1    1          0
+ 3: 1    1          3
+ 4: 1    1          4
+ 5: 0    0          0
+ 6: 1    1          0
+ 7: 1    1          0
+ 8: 1    1          0
+ 9: 1    1          0
+ a: 1    1          0
+ b: 1    1          0
+ c: 1    1          0
+ d: 1    1          0
+ e: 1    1          0
+ f: 1    1          0
+10: 1    1          0
+11: 1    1          0
+12: 1    1          0
+13: 1    1          0
+14: 1    1          0
+15: 1    1          0
+16: 1    1          0
+17: 1    1          0
+18: 1    1          0
+19: 1    1          0
+1a: 1    1          0
+1b: 1    1          0
+1c: 1    1          0
+1d: 1    1          0
+1e: 1    1          0
